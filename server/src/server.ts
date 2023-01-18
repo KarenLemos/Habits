@@ -15,10 +15,8 @@ app.get('/', async () => {
     return habits;
 });
 
-app.get('/', () =>  {
-    return 'Hello!!!!'
-})
-
 app.listen({
-    port: 5555
-});
+    port: 5555,
+}).then(() => {
+    console.log('HTTP Server running');
+})
